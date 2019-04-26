@@ -9,12 +9,12 @@ class TestMathErrors(unittest.TestCase):
     """
     
     def test_00(self):
-        x = 1 + 1
+        x = 2 - 1
         answer = 1
         self.assertEqual(x, answer)
 
     def test_01(self):
-        x = 100 / 2
+        x = 100 * 2
         answer = 200
         self.assertEqual(x, answer)
 
@@ -26,8 +26,8 @@ class TestMathErrors(unittest.TestCase):
         self.assertEqual(x, answer)
         
     def test_03(self):
-        x = 3 + 2 + 3 / 4.
-        answer = 2
+        x = 3 + 2 + 3 * 4.
+        answer = 17
         self.assertEqual(x, answer)
 
     def test_04(self):
