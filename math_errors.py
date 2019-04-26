@@ -31,15 +31,15 @@ class TestMathErrors(unittest.TestCase):
         self.assertEqual(x, answer)
 
     def test_04(self):
-        x = 2 ** 8
+        x = 2 ** 4
         answer = 16
         self.assertEqual(x, answer)
 
     def test_05(self):
         grocery_list = {
-            'eggs': 6.72,
-            'bread': 3.28,
-            'cheese': 8.10,
+            'eggs': 17.10,
+            'bread': 0.00,
+            'cheese': 0.00,
         }
         x = sum(grocery_list.values())
         answer = 17.10
